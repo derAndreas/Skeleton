@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/derAndreas/Skeleton",
   "dependencies": {
+    "stylus": "^0.49.3"
   },
   "devDependencies": {
     "gulp": "^3.8.10",
