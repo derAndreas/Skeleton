@@ -1,3 +1,6 @@
+
+var path = require('path');
+
 /**
  * Library version.
  */
