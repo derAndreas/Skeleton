@@ -2,59 +2,41 @@
  * -------------
  */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6
-  margin-top 0
-  rempx(margin-bottom, 2)
-  font-weight 300
+h1, h2, h3, h4, h5, h6
+  skel_typo_defaults()
 
 h1
-  rempx(font-size, $head1-size)
-  line-height 1.2
-  letter-spacing -.1rem
+  skel_typo_gen($font-size-h1, 1.2)
 
 h2
-  rempx(font-size, $head2-size)
-  line-height 1.25
-  letter-spacing -.1rem
+  skel_typo_gen($font-size-h2, 1.25)
 
 h3
-  rempx(font-size, $head3-size)
-  line-height 1.3
-  letter-spacing -.1rem
+  skel_typo_gen($font-size-h3, 1.3)
 
 h4
-  rempx(font-size, $head4-size)
-  line-height 1.35
-  letter-spacing -.08rem
+  skel_typo_gen($font-size-h4, 1.35, -0.8)
 
 h5
-  rempx(font-size, $head5-size)
-  line-height 1.5
-  letter-spacing -.05rem
+  skel_typo_gen($font-size-h5, 1.35, -0.5)
 
 h6
-  rempx(font-size, $head6-size)
-  line-height 1.6
-  letter-spacing 0
+  skel_typo_gen($font-size-h6, 1.6, 0)
+
 
 @media (min-width: 550px)
   h1
-    rempx(font-size, $head1-large-size)
+    rempx(font-size, $font-size-h1-large)
   h2
-    rempx(font-size, $head2-large-size)
+    rempx(font-size, $font-size-h2-large)
   h3
-    rempx(font-size, $head3-large-size)
+    rempx(font-size, $font-size-h3-large)
   h4
-    rempx(font-size, $head4-large-size)
+    rempx(font-size, $font-size-h4-large)
   h5
-    rempx(font-size, $head5-large-size)
+    rempx(font-size, $font-size-h5-large)
   h6
-    rempx(font-size, $head6-large-size)
+    rempx(font-size, $font-size-h6-large)
 
 p
   margin-top 0
