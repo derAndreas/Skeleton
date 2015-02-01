@@ -2,9 +2,6 @@
 # NPM node_modules
 /node_modules
 
-# BUILD files
-/dist/*
-
 # tmp files
 .tmp/
 .DS_Store
