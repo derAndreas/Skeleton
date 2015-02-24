@@ -15,7 +15,6 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="dist/normalize.css">
   <link rel="stylesheet" href="dist/skeleton.css">
   <link rel="stylesheet" href="css/custom.css">
 
@@ -217,11 +216,11 @@
             <p><strong>Headings</strong> create a family of distinct sizes each with specific <code>letter-spacing</code>, <code>line-height</code>, and <code>margins</code>.</p>
           </div>
           <div class="six columns">
-            <h1>Heading<span class="heading-font-size"> <code>&lt;h1&gt;</code> 50rem</span></h1>
-            <h2>Heading<span class="heading-font-size"> <code>&lt;h2&gt;</code> 42rem</span></h2>
-            <h3>Heading<span class="heading-font-size"> <code>&lt;h3&gt;</code> 36rem</span></h3>
-            <h4>Heading<span class="heading-font-size"> <code>&lt;h4&gt;</code> 30rem</span></h4>
-            <h5>Heading<span class="heading-font-size"> <code>&lt;h5&gt;</code> 24rem</span></h5>
+            <h1>Heading<span class="heading-font-size"> <code>&lt;h1&gt;</code> 40rem</span></h1>
+            <h2>Heading<span class="heading-font-size"> <code>&lt;h2&gt;</code> 36rem</span></h2>
+            <h3>Heading<span class="heading-font-size"> <code>&lt;h3&gt;</code> 30rem</span></h3>
+            <h4>Heading<span class="heading-font-size"> <code>&lt;h4&gt;</code> 24rem</span></h4>
+            <h5>Heading<span class="heading-font-size"> <code>&lt;h5&gt;</code> 18rem</span></h5>
             <h6>Heading<span class="heading-font-size"> <code>&lt;h6&gt;</code> 15rem</span></h6>
           </div>
         </div>
@@ -259,16 +258,49 @@
       <p>Buttons come in two basic flavors in Skeleton. The standard <code>&lt;button&gt;</code> element is plain, whereas the <code>.button-primary</code> button is vibrant and prominent. Button styles are applied to a number of appropriate form elements, but can also be arbitrarily attached to anchors with a <code>.button</code> class.</p>
       <div class="docs-example">
         <div>
-          <a class="button" href="#">Anchor button</a>
-          <button>Button element</button>
-          <input type="submit" value="submit input">
-          <input type="button" value="button input">
+          <a class="btn" href="#">Anchor button</a>
+          <button class="btn">Button element</button>
+          <input class="btn" type="submit" value="submit input">
+          <input class="btn" type="button" value="button input">
         </div>
         <div>
-          <a class="button button-primary" href="#">Anchor button</a>
-          <button class="button-primary">Button element</button>
-          <input class="button-primary" type="submit" value="submit input">
-          <input class="button-primary" type="button" value="button input">
+          <a class="btn btn-primary" href="#">Anchor button</a>
+          <button class="btn btn-primary">Button element</button>
+          <input class="btn btn-primary" type="submit" value="submit input">
+          <input class="btn btn-primary" type="button" value="button input">
+        </div>
+        <h3> Colors! </h3>
+        <div>
+          <a class="btn btn-no" href="#">Color no</a>
+          <a class="btn btn-red" href="#">Color red</a>
+          <a class="btn btn-pink" href="#">Color pink</a>
+          <a class="btn btn-purple" href="#">Color purple</a>
+          <a class="btn btn-deeppurple" href="#">Color deeppurple</a>
+          <a class="btn btn-indigo" href="#">Color indigo</a>
+          <a class="btn btn-blue" href="#">Color blue</a>
+          <a class="btn btn-lightblue" href="#">Color lightblue</a>
+          <a class="btn btn-cyan" href="#">Color cyan</a>
+          <a class="btn btn-teal" href="#">Color teal</a>
+          <a class="btn btn-green" href="#">Color green</a>
+          <a class="btn btn-lightgreen" href="#">Color lightgreen</a>
+          <a class="btn btn-lime" href="#">Color lime</a>
+          <a class="btn btn-yellow" href="#">Color yellow</a>
+          <a class="btn btn-amber" href="#">Color amber</a>
+          <a class="btn btn-orange" href="#">Color orange</a>
+          <a class="btn btn-deeporange" href="#">Color deeporange</a>
+          <a class="btn btn-brown" href="#">Color brown</a>
+          <a class="btn btn-grey" href="#">Color gery</a>
+          <a class="btn btn-bluegrey" href="#">Color bluegrey</a>
+          <a class="btn btn-black" href="#">Color black</a>
+        </div>
+
+        <h3> Sizes! </h3>
+        <div>
+          <a class="btn btn-xsmall" href="#">xsmall</a>
+          <button class="btn btn-small">small</button>
+          <input class="btn btn-medium" type="submit" value="submit input">
+          <input class="btn btn-large" type="button" value="button input">
+          <input class="btn btn-xlarge" type="button" value="button input">
         </div>
       </div>
 
@@ -276,16 +308,16 @@
 <!-- CODE EXAMPLE ———————————————————————————————————————— -->
 <pre class="code-example">
 <code class="code-example-body prettyprint"><!-- Standard buttons -->
-<a class="button" href="#">Anchor button</a>
-<button>Button element</button>
-<input type="submit" value="submit input">
-<input type="button" value="button input">
+<a class="btn" href="#">Anchor button</a>
+<button class="btn">Button element</button>
+<input class="btn" type="submit" value="submit input">
+<input class="btn" type="button" value="button input">
 
 <!-- Primary buttons -->
-<a class="button button-primary" href="#">Anchor button</a>
-<button class="button-primary">Button element</button>
-<input class="button-primary" type="submit" value="submit input">
-<input class="button-primary" type="button" value="button input">
+<a class="btn btn-primary" href="#">Anchor button</a>
+<button class="btn btn-primary">Button element</button>
+<input class="btn btn-primary" type="submit" value="submit input">
+<input class="btn btn-primary" type="button" value="button input">
 </code>
 </pre>
 <!-- ————————————————————————————————————————————————————— -->
@@ -319,7 +351,7 @@
             <input type="checkbox">
             <span class="label-body">Send a copy to yourself</span>
           </label>
-          <input class="button-primary" type="submit" value="Submit">
+          <input class="btn btn-primary" type="submit" value="Submit">
         </form>
       </div>
 
@@ -348,7 +380,7 @@
     <input type="checkbox">
     <span class="label-body">Send a copy to yourself</span>
   </label>
-  <input class="button-primary" type="submit" value="Submit">
+  <input class="btn button-primary" type="submit" value="Submit">
 </form>
 
 <!-- Always wrap checkbox and radio inputs in a label and use a <span class="label-body"> inside of it -->
