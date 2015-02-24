@@ -1,0 +1,15 @@
+
+
+btn-color($name, $bg, $col=#000)
+  .btn-{$name},
+  .btn-{$name} a
+    background $bg
+    color $col
+
+    &:hover,
+    &:focus
+      color $col
+
+btn-size($name, $size)
+  .btn-{$name}
+    font-size $size
