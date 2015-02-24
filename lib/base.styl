@@ -5,8 +5,26 @@
  * are based on 10px sizing. So basically 1.5rem = 15px :)
  */
 
+@require "../node_modules/normalize.css/normalize.css"
+
+html,
+button,
+input,
+textarea
+  box-sizing border-box
+
+*,
+*:before,
+*:after
+  box-sizing: border-box
+
 html
-  skel_html()
+  font-size 62.5%
 
 body
-  skel_body()
+  color $font-text-color
+  font-size 1.5em
+  font-weight 400
+  font-family $font-family
+  line-height 1.6
+
